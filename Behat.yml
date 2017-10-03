@@ -1,0 +1,15 @@
+default:
+    extensions:
+        Laracasts\Behat:
+            env_path: .env.behat
+        Behat\MinkExtension:
+            base_url: https://drivecompanion.app
+            default_session: laravel
+            laravel: ~
+            selenium2: ~
+    suites:
+      default:
+        contexts:
+          - FeatureContext:
+              parameters:
+                foo: bar

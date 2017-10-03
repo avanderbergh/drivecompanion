@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
+@import "mixins/flexbox";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../vendor/font-awesome/scss/font-awesome";
+@import "../vendor/icons/variables";
+
+.student-folders{
+  margin-top: 8px;
+  display: flex;
+  align-items: stretch;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+.modal-header {
+  border-bottom:1px solid #eee;
+  background-color: $brand-primary;
+  color: #fff;
+}
+
+.btn-circle {
+  width: $input-height-base;
+  height: $input-height-base;
+  line-height: $input-height-base; /* adjust line height to align vertically*/
+  padding:0;
+  border-radius: 50%;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+  color: $brand-primary;
+}
+
+.btn-primary.btn-outline:disabled {
+  color: #fff;
+}
+
+.btn-success.btn-outline {
+  color: $brand-success;
+}
+
+.btn-info.btn-outline {
+  color: $brand-info;
+}
+
+.btn-warning.btn-outline {
+  color: $brand-warning;
+}
+
+.btn-danger.btn-outline {
+  color: $brand-danger;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: #fff;
+}
+
+.navbar-main {
+  border-top: 5px solid;
+  border-top-color: $brand-primary;
+}
+
+.student-select {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: inline;
+  max-width: 100%;
+  > ul {
+    padding: 0;
+    display: inline;
+    list-style: none;
+    > li {
+      display: inline;
+      padding: 0;
+      > a > img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+.new-changes {
+  font-weight: bold;
+}
+
+.well-scroll {
+  max-height: 200px;
+  overflow-y: scroll;
+}
