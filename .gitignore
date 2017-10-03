@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+/keys
+startqueues
+
+.env
+.env.behat
+.idea
+*.swp
